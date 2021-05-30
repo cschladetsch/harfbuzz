@@ -179,6 +179,10 @@ set (project_extra_sources)
 set (project_headers ${HB_BASE_headers})
 set (subset_project_headers ${HB_SUBSET_headers})
 
+set(HB_HAVE_FREETYPE ON)
+
+set(CMAKE_PREFIX_PATH ../freetype2)
+
 ## Find and include needed header folders and libraries
 if (HB_HAVE_FREETYPE)
   include (FindFreetype)
